@@ -2,7 +2,6 @@ package datastruct
 
 import (
 		"testing"
-		"fmt"
 		)
 
 func TestPriorityQueuePush(t *testing.T){
@@ -17,7 +16,6 @@ func TestPriorityQueuePush(t *testing.T){
 	n=queue.Pop()
 	n=queue.Pop()
 	n=queue.Pop()
-	fmt.Println(n)
 	result,_:=n.Compare(a)
 	if result!=0{
 		t.Errorf("error!")
